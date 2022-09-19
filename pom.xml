@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>top.lsln</groupId>
+    <artifactId>lsln-core-bom</artifactId>
+    <version>2022.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <organization>
+        <name>Liu</name>
+        <url>https://www.lsln.top/</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>lsy_xin</id>
+            <name>Xin Liu</name>
+            <email>lsy_xin@lsln.top</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/lsyxin/lsln-core-bom.git</connection>
+        <developerConnection>scm:git:ssh://github.com/lsyxin/lsln-core-bom.git</developerConnection>
+        <url>https://github.com/lsyxin/lsln-core-bom</url>
+        <tag>lsln-core-bom-2022.1.0-SNAPSHOT</tag>
+    </scm>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <sa-dependencies.version>2022.1.1-SNAPSHOT</sa-dependencies.version>
+        <lsln-core.version>2022.1.0</lsln-core.version>
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+                <dependency>
+                    <groupId>top.lsln</groupId>
+                    <artifactId>sa-falswork-dependencies</artifactId>
+                    <version>${sa-dependencies.version}</version>
+                    <type>pom</type>
+                    <scope>import</scope>
+                </dependency>
+
+            <!-- lsln-core-dependencies -->
+            <dependency>
+                <groupId>top.lsln</groupId>
+                <artifactId>lsln-core-boot</artifactId>
+                <version>${lsln-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>top.lsln</groupId>
+                <artifactId>lsln-core-db-jpa</artifactId>
+                <version>${lsln-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>top.lsln</groupId>
+                <artifactId>lsln-core-launch</artifactId>
+                <version>${lsln-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>top.lsln</groupId>
+                <artifactId>lsln-core-log</artifactId>
+                <version>${lsln-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>top.lsln</groupId>
+                <artifactId>lsln-core-redisoon-hibernate</artifactId>
+                <version>${lsln-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>top.lsln</groupId>
+                <artifactId>lsln-core-tools</artifactId>
+                <version>${lsln-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>top.lsln</groupId>
+                <artifactId>lsln-core-xxljob</artifactId>
+                <version>${lsln-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>top.lsln</groupId>
+                <artifactId>lsln-rest-template-java11</artifactId>
+                <version>${lsln-core.version}</version>
+            </dependency>
+            
+        </dependencies>
+    </dependencyManagement>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>maven-snapshots</name>
+            <url>https://ne.dituhui.com/repository/maven-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>releases</id>
+            <name>maven-releases</name>
+            <url>https://ne.dituhui.com/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
+
+</project>
