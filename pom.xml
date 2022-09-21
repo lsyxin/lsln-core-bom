@@ -42,6 +42,7 @@
 
         <sa-dependencies.version>2022.1.4-SNAPSHOT</sa-dependencies.version>
         <lsln-core.version>2022.1.3-SNAPSHOT</lsln-core.version>
+
     </properties>
 
 
