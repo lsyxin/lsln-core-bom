@@ -40,7 +40,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <sa-dependencies.version>2022.1.4</sa-dependencies.version>
+        <sa-dependencies.version>2022.2.0-SNAPSHOT</sa-dependencies.version>
         <lsln-core.version>2022.1.4-SNAPSHOT</lsln-core.version>
     </properties>
 
