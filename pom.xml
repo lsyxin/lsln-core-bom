@@ -103,12 +103,12 @@
         <snapshotRepository>
             <id>snapshots</id>
             <name>maven-snapshots</name>
-            <url>https://ne.dituhui.com/repository/maven-snapshots/</url>
+            <url>https://nexus.lsln.top/repository/maven-snapshots/</url>
         </snapshotRepository>
         <repository>
             <id>releases</id>
             <name>maven-releases</name>
-            <url>https://ne.dituhui.com/repository/maven-releases/</url>
+            <url>https://nexus.lsln.top/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
 
