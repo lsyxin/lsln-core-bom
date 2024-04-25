@@ -6,7 +6,7 @@
 
     <groupId>top.lsln</groupId>
     <artifactId>lsln-core-bom</artifactId>
-    <version>2022.3.3-SNAPSHOT</version>
+    <version>2023.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <organization>
@@ -32,7 +32,7 @@
         <connection>scm:git:git://github.com/lsyxin/lsln-core-bom.git</connection>
         <developerConnection>scm:git:ssh://github.com/lsyxin/lsln-core-bom.git</developerConnection>
         <url>https://github.com/lsyxin/lsln-core-bom</url>
-        <tag>2022.3.3-SNAPSHOT</tag>
+        <tag>2023.0.1-SNAPSHOT</tag>
     </scm>
 
     <properties>
@@ -40,8 +40,8 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <sa-dependencies.version>2022.3.3-SNAPSHOT</sa-dependencies.version>
-        <lsln-core.version>2022.3.3-SNAPSHOT</lsln-core.version>
+        <sa-dependencies.version>2023.0.1-SNAPSHOT</sa-dependencies.version>
+        <lsln-core.version>2023.0.1-SNAPSHOT</lsln-core.version>
     </properties>
 
 
