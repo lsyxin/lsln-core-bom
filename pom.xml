@@ -101,6 +101,11 @@
                 <artifactId>lsln-rest-template-java11</artifactId>
                 <version>${lsln-core.version}</version>
             </dependency>
+            <dependency>
+                <groupId>top.lsln</groupId>
+                <artifactId>lsln-core-hibernate-multi-tenant-starter</artifactId>
+                <version>${lsln-core.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -108,12 +113,12 @@
         <snapshotRepository>
             <id>snapshots</id>
             <name>maven-snapshots</name>
-            <url>https://ne.dituhui.com/repository/maven-snapshots/</url>
+            <url>https://nexus.liu.lsln.top/repository/maven-snapshots/</url>
         </snapshotRepository>
         <repository>
             <id>releases</id>
             <name>maven-releases</name>
-            <url>https://ne.dituhui.com/repository/maven-releases/</url>
+            <url>https://nexus.liu.lsln.top/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
 
